@@ -43,3 +43,8 @@ pytest -v
 ---
 
 <!-- Future sessions: add a new "## PW<n> — Lab <X>" section below. -->
+
+## PW1 - Lab B
+
+- **Data Analysis:** The observed decay data matches the exponential analytical law ($N(t) = N_0 e^{-\lambda t}$) very closely.
+- **Workflow Automation:** A `Snakefile` was created to automatically execute `plot.py` and generate `figure.png` using Snakemake.
