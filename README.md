@@ -63,3 +63,22 @@ Differentiation acts as a high-pass filter that magnifies high-frequency noise p
 
 ### Integration Result
 Integrating the noisy acceleration back suppresses the noise (integration cancels out random variations) and successfully recovers the original position within less than a metre of accuracy (0.78 m).
+
+## PW2 --- Lab B Report
+
+### Optimization Methods Comparison (Part 2)
+- **Easy Convex Function $f(x)$:** Gradient Descent, Newton's method, and SLSQP all converged smoothly to the global minimum at $x \approx 3.0000$.
+- **Harder Landscape $g(x)$:** The starting point significantly affects the result. From $x_0 = 0$, Newton's method converges to a local stationary point ($x \approx 1.1389$), whereas SLSQP finds the minimum. Starting from different points highlights how local curvature and initial guesses impact optimization algorithms.
+
+### Reaction Kinetics (Part 3)
+- Fitted rate constant: $k \approx 0.25$ (or your calculated $k$ value).
+- Generated plot: `kinetics.png`.
+
+### Chemical Equilibrium (Part 4)
+- Both Newton's method and SLSQP agree on the equilibrium extent $x \approx 0.66$.
+- Equilibrium composition: $\text{H}_2 \approx 0.33\text{ mol}$, $\text{I}_2 \approx 0.33\text{ mol}$, and $\text{HI} \approx 1.33\text{ mol}$.
+- Generated plot: `equilibrium.png`.
+
+### Titration Equivalence Point (Part 5)
+- Computed equivalence point: $V \approx 50.00\text{ mL}$ (where the slope $d(\text{pH})/dV$ peaks).
+- Generated plot: `titration.png`.
